@@ -1,2 +1,0 @@
-test string1
-test string2
