@@ -3,25 +3,25 @@ const { default: axios } = require("axios");
 
 describe('GET request test', () => {
     test('Status code is 200 ', async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
-        expect(response.status).toEqual(200)
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+        expect(response.status).toEqual(200);
 
     })
 
     test('Number of posts = 100', async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts')
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
         const posts = response.data;
-        expect(posts).toHaveLength(100)
+        expect(posts).toHaveLength(100);
 
     })
 
     test('Get first post and verify', async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
         const post = response.data;
-        expect(post.userId).toBe(1)
-        expect(post.id).toBe(1)
-        expect(post.title).toEqual("sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
-        expect(post.body).toContain("quia et suscipit\nsuscipit")
+        expect(post.userId).toBe(1);
+        expect(post.id).toBe(1);
+        expect(post.title).toEqual("sunt aut facere repellat provident occaecati excepturi optio reprehenderit");
+        expect(post.body).toContain("quia et suscipit\nsuscipit");
     })
 })
 
@@ -33,10 +33,9 @@ describe('POST request test', () => {
             userId: 2
         })
         const postData = response.data
-        expect(response.status).toBe(201)
-        expect(postData.id).toBeGreaterThan(100)
-        expect(postData.userId).toEqual(response.data.userId)
-        expect(postData.body).toEqual(response.data.body)
-        console.log(postData)
+        expect(response.status).toBe(201);
+        expect(postData.id).toBeGreaterThan(100);
+        expect(postData.userId).toEqual(response.data.userId);
+        expect(postData.body).toEqual(response.data.body);
     })
 })
