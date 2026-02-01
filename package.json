@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.2.0",
+    "husky": "^9.1.7",
+    "prettier": "3.8.1",
+    "typescript-eslint": "^8.54.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "prettier-lesson12": "npx prettier --write ./js-practice/homework12/test-formating.js",
+    "eslint-lesson12": "npx eslint ./js-practice/homework12/test-formating.js"
+  }
+}
