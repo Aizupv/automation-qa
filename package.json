@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "prettier-lesson12": "npx prettier --write ./js-practice/homework12/test-formating.js",
-    "eslint-lesson12": "npx eslint ./js-practice/homework12/test-formating.js"
+    "prettier": "npx prettier --write ./api-testing/**/**.js"
+   
   }
 }
