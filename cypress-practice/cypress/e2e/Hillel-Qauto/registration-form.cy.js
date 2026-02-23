@@ -1,7 +1,5 @@
 describe('Registration form functionality', () => {
-	let email;
 	beforeEach(() => {
-		cy.wrap(email).as('userEmail');
 		cy.intercept({ resourceType: /xhr|fetch/ }, { log: false });
 		cy.visit('/');
 		cy.get('.btn-primary').contains('Sign up').click();
