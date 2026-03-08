@@ -4,6 +4,6 @@ export default defineConfig({
 	allowCypressEnv: true,
 
 	e2e: {
-		baseUrl: `https://guest:welcome2qauto@qauto.forstudy.space`,
+		baseUrl: `https://guest:welcome2qauto@qauto2.forstudy.space`,
 	},
 });
