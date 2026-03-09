@@ -1,0 +1,12 @@
+{
+	"userForRegistration": {
+		"name": "testUserName",
+		"lastName": "testUserLastName",
+		"email": "testUser@mail.com",
+		"password": "testPassword1"
+	},
+	"userforLogin": {
+		"email": "testUser@mail.com",
+		"password": "testPassword1"
+	}
+}
